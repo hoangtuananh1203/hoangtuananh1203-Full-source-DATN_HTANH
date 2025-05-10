@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Xem sau</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow backgrounddark" role="status"></div>
+    </div>
+    <!-- Navbar start -->
+
+    <div class="container-fluid fixed-top">
+      <div class="container rounded-pill py-2 d-none d-lg-block bannerbg">
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2 text-dark font-weight-bold">
+            Website tra cứu địa điểm du lịch và ẩm thực Việt Nam
+          </div>
+          <div class="pe-2">
+            
+          </div>
+        </div>
+      </div>
+      <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+          <a href="index.html" class="navbar-brand"
+            ><h1 class="display-6 textcolor">VietHorizon</h1></a
+          >
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarreponsi"
+          >
+            <span class="fa fa-bars textcolor"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-white" id="navbarreponsi">
+            <div class="navbar-nav mx-auto">
+              <a href="index.html" class="nav-item nav-link "
+                >Trang chủ</a
+              >
+              <a href="dulich.html" class="nav-item nav-link ">Du lịch và Ẩm thực</a>
+              <a href="tintuc.html" class="nav-item nav-link"
+                >Sự kiện tin tức</a
+              >
+
+              <a href="contact.html" class="nav-item nav-link">Đóng góp</a>
+            </div>
+            <div class="d-flex m-3 me-0">
+              <div class="mt-2 pt-1 d-flex loginlogout">
+                <a
+                  href="#"
+                  class="text-dark nav-link mobilecss"
+                  data-bs-target="#idmodaldk"
+                  data-bs-toggle="modal"
+                >
+                  <small class="mx-1 fs-6 userlog">Đăng ký</small>
+                </a>
+                <a
+                  href="#"
+                  class="text-dark nav-link mobilecss"
+                  data-bs-target="#idmodaldn"
+                  data-bs-toggle="modal"
+                >
+                  <small class="mx-1 fs-6 userlog" >Đăng nhập</small>
+                </a>
+              </div>
+
+              <a
+                href="xemsau.html"
+                class="nav-link userindex iconxemsau "
+                style="font-size: 26px"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Danh sách xem sau"
+              >
+                <i
+                 class="fa-solid fa-map-location-dot my-auto textcolor mobilecss fs-4 mt-1"
+                ></i>
+              </a>
+              <a
+                href="account.html"
+                class="nav-link userindex accoutinfo"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Thông tin tài khoản"
+              >
+                <i class="fas fa-user fa-2x my-auto textcolor mobilecss"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container mt-5"></div>
+
+
+<!-- Xem sau st  -->
+ <div class="container-fluid contact pt-5">
+  <div class="container py-5 containdsdd">
+      <div class="  rounded containdsdd">
+       <h4 class="reponsitorytt">Danh sách địa điểm xem sau </h4>
+          <div class="row">
+            <div class="col-md-1 anmobile antablet fw-bold text-center">
+              STT
+            </div>
+            <div class="col-md-11 anmobile  antablet fw-bold  text-center">
+             Địa điểm
+            </div>
+           
+          </div>
+          <hr class="mt-3">
+        <div class="danhsachxemsau ">
+      
+        </div>
+   
+       
+          
+      </div>
+  </div>
+</div>
+<!-- Xem sau end  -->
+<!-- Footer Start -->
+    <div class="container-fluid backgrounddark text-white-50 footer pt-5 mt-5">
+      <div class="container py-5">
+        <div
+          class="pb-4 mb-4"
+          style="border-bottom: 1px solid rgba(226, 175, 24, 0.5)"
+        >
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <a href="#">
+                <h1 class="text-white mb-0">VietHorizon</h1>
+                <p class="text-light mb-0">
+                  Tra cứu nhanh chóng, trải nghiệm thú vị
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-5">
+              <div class="position-relative mx-auto">
+                <input
+                class="form-control border-2 w-100 py-3 px-4 rounded-pill"
+                type="text"
+               placeholder="Email của bạn"
+              />
+              <button
+                type="submit"
+                class="btn bg-warning border-2 py-3 px-4 position-absolute rounded-pill text-white h-100"
+                style="top: 0; right: 0"
+              >
+              Đăng ký ngay
+              </button>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="d-flex justify-content-end pt-3">
+                <a
+                  class="btn btn-outline-light me-2 btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light me-2 btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light me-2 btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-item">
+              <h4 class="text-light mb-3">Khám phá & Trải nghiệm!</h4>
+              <p class="mb-4 text-white">
+                Tìm kiếm dễ dàng – Hành trình đáng nhớ!
+              </p>
+
+              <a
+                href="#"
+                class="btn border-white py-2 px-4 rounded-pill btnhover"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex flex-column text-start footer-item">
+              <h4 class="text-light mb-3">Về chúng tôi</h4>
+              <a class="btn-link" href="#">Giới thiệu về chúng tôi</a>
+              <a class="btn-link" href="#">Liên hệ với chúng tôi</a>
+              <a class="btn-link" href="#">Chính sách bảo mật</a>
+              <a class="btn-link" href="#">Điều khoản & Điều kiện</a>
+
+              <a class="btn-link" href="#">Câu hỏi thường gặp & Trợ giúp</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-item">
+              <h4 class="text-light mb-3">Liên hệ</h4>
+              <p>Address:</p>
+              <p>Email: VietHorizonsp@gmail.com</p>
+              <p>Phone: (+84)0376081540</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <span class="text-light"
+              ><a href="#"
+                ><i class="fas fa-copyright text-light me-2"></i
+                >VietHorizonsp.com.vn</a
+              >, All right reserved.</span
+            >
+          </div>
+          <div
+            class="col-md-6 my-auto text-center text-md-end text-white"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-to-top d-flex flex-column">
+      <a href="AIchatbot.html" class="btn animated-border bg-info text-white my-3 rounded-circle">AI</a>
+      <a href="#" class="btn animated-border bg-info text-white mb-5 rounded-circle">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+    <div
+    id="alert-container"
+    style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1050;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+    "
+  ></div>
+  <style>
+    @media (max-width:1200px) {
+    h4.inlinenowrap1{
+        font-size: 17px ;
+    }
+    h3.m-0.text-start{
+        font-size: 18px;
+    }
+    .col-md-12.rounded.border-1.border.h-auto.px-2  h4{
+        font-size: 16px;
+    }
+    h4.inlinenowrap2{
+      font-size: 17px;
+
+    }
+    button.btn.mybuttonnot.m-auto.ms-5{
+      font-size: 16px;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    img.p-0.m-0.rounded{
+        width: 150px;
+    }
+    h4.inlinenowrap2{
+      font-size: 17px;
+
+    }
+    button.btn.mybuttonnot.m-auto.ms-5{
+      font-size: 14px;
+    }
+
+}
+@media (max-width:500px) {
+    img.p-0.m-0.rounded{
+        width: 100px;
+    }
+    h4.inlinenowrap2{
+      font-size: 15px;
+
+    }
+    button.btn.mybuttonnot.m-auto.ms-5{
+      font-size: 14px;
+    }
+
+}
+  </style>
+  
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+  <script type="module" src="js/account.js"></script>
+  <script type="module" src="js/xemsau.js"></script>
+
+</html>

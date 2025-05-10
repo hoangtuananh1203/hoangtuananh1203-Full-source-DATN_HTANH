@@ -1,0 +1,1328 @@
+[
+  {
+    "ContainingType": "My_websiteAPI.Controllers.AccountController",
+    "Method": "Dangky",
+    "RelativePath": "api/Account/Dangky",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.Model.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.AccountController",
+    "Method": "Dangnhap",
+    "RelativePath": "api/Account/Dangnhap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.Model.SignInModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.AccountController",
+    "Method": "LogUpAdmin",
+    "RelativePath": "api/Account/LogUpAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.Model.SignUpModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.BannerthreeController",
+    "Method": "Getall",
+    "RelativePath": "api/Bannerthree",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.BannerthreeController",
+    "Method": "Create",
+    "RelativePath": "api/Bannerthree",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.Model.BannerThree",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ChatBotController",
+    "Method": "Chat",
+    "RelativePath": "api/ChatBot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "question",
+        "Type": "My_websiteAPI.Model.Usersend",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ChatBotController",
+    "Method": "Daydl",
+    "RelativePath": "api/ChatBot/daydl",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ChatBotController",
+    "Method": "DeleteAllDocuments",
+    "RelativePath": "api/ChatBot/xoatatca",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Danhgia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "Create",
+    "RelativePath": "api/Danhgia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.DanhGiaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "DeleteDanhgia",
+    "RelativePath": "api/Danhgia",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "DanhgiaDiaDiem",
+    "RelativePath": "api/Danhgia/DanhgiaDiaDiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "Danhgiathongke",
+    "RelativePath": "api/Danhgia/Danhgiathongke",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "Thongkedanhgia",
+    "RelativePath": "api/Danhgia/Thongkedanhgia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "FinbysearDiem",
+    "RelativePath": "api/Danhgia/Timdanhgia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "noidung",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "diem",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DanhgiaController",
+    "Method": "TinhtoanDanhgia",
+    "RelativePath": "api/Danhgia/TinhtoanDanhgia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "GetAll",
+    "RelativePath": "api/Diadiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "GetCount",
+    "RelativePath": "api/Diadiem/Count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "Create",
+    "RelativePath": "api/Diadiem/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "My_websiteAPI.ModelView.DiadiemDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "GetAllDanhcho",
+    "RelativePath": "api/Diadiem/danhcho",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "cacdiadiemmoi",
+    "RelativePath": "api/Diadiem/ddmoi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "Delete",
+    "RelativePath": "api/Diadiem/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "diadiemlienquan",
+    "RelativePath": "api/Diadiem/diadiemlienquan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "EditDiaDiem",
+    "RelativePath": "api/Diadiem/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "p",
+        "Type": "My_websiteAPI.ModelView.DiadiemDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "Finbyid",
+    "RelativePath": "api/Diadiem/Find",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "GetAllLoaiHinh",
+    "RelativePath": "api/Diadiem/loaihinh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "Congluotxem",
+    "RelativePath": "api/Diadiem/Luotxem",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "SearchDiaDiem",
+    "RelativePath": "api/Diadiem/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tinhthanh",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "loaidiadiem",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "loaihinh",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "doituong",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "Soluotxem",
+    "RelativePath": "api/Diadiem/Soluoxem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "GetfiveIndex",
+    "RelativePath": "api/Diadiem/thinhhanh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DiadiemController",
+    "Method": "thongkesodd",
+    "RelativePath": "api/Diadiem/thongkesodd",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "GetAll",
+    "RelativePath": "api/DoiTuong",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "GetCount",
+    "RelativePath": "api/DoiTuong/Count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "Create",
+    "RelativePath": "api/DoiTuong/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.DanhchoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "Delete",
+    "RelativePath": "api/DoiTuong/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "Edit",
+    "RelativePath": "api/DoiTuong/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.DanhchoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "GetAllDanhcho",
+    "RelativePath": "api/DoiTuong/GetallDT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "SearchDoituong",
+    "RelativePath": "api/DoiTuong/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DoiTuongController",
+    "Method": "SearchDoituongid",
+    "RelativePath": "api/DoiTuong/searchid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DongGopController",
+    "Method": "GetAll",
+    "RelativePath": "api/DongGop",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DongGopController",
+    "Method": "GetCount",
+    "RelativePath": "api/DongGop/Count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DongGopController",
+    "Method": "Create",
+    "RelativePath": "api/DongGop/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.DonggopDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DongGopController",
+    "Method": "Delete",
+    "RelativePath": "api/DongGop/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DongGopController",
+    "Method": "Edit",
+    "RelativePath": "api/DongGop/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.DongGopController",
+    "Method": "SearchDonggop",
+    "RelativePath": "api/DongGop/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangthai",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.EditAccountController",
+    "Method": "DeleteAccount",
+    "RelativePath": "api/EditAccount",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iduser",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.EditAccountController",
+    "Method": "GetAllAccount",
+    "RelativePath": "api/EditAccount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.EditAccountController",
+    "Method": "ChangPassword",
+    "RelativePath": "api/EditAccount/admin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.DoimatkhauMVA",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.EditAccountController",
+    "Method": "ChangPasswordcustom",
+    "RelativePath": "api/EditAccount/customer",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.DoimatkhauMV",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.EditAccountController",
+    "Method": "Datlaimk",
+    "RelativePath": "api/EditAccount/datlaimk",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "iduser",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.EditAccountController",
+    "Method": "TimkiemAccount",
+    "RelativePath": "api/EditAccount/searchAccount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ItemDanhsachChoController",
+    "Method": "GetAll",
+    "RelativePath": "api/ItemDanhsachCho",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ItemDanhsachChoController",
+    "Method": "Create",
+    "RelativePath": "api/ItemDanhsachCho",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.itemDanhsachChoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ItemDanhsachChoController",
+    "Method": "DeleteItem",
+    "RelativePath": "api/ItemDanhsachCho",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ItemlichsuTraiNghiemController",
+    "Method": "GetAll",
+    "RelativePath": "api/ItemlichsuTraiNghiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ItemlichsuTraiNghiemController",
+    "Method": "Create",
+    "RelativePath": "api/ItemlichsuTraiNghiem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.ItemLichSuTraiNghiemDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ItemlichsuTraiNghiemController",
+    "Method": "DeleteItem",
+    "RelativePath": "api/ItemlichsuTraiNghiem",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.ItemlichsuTraiNghiemController",
+    "Method": "Searchdd",
+    "RelativePath": "api/ItemlichsuTraiNghiem/timdiadiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.LoaiHinhController",
+    "Method": "GetAllLoaiHinh",
+    "RelativePath": "api/LoaiHinh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.LoaiHinhController",
+    "Method": "countLoaiHinh",
+    "RelativePath": "api/LoaiHinh/countLoaiHinh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.LoaiHinhController",
+    "Method": "CreateLoaiHinh",
+    "RelativePath": "api/LoaiHinh/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.LoaiHinhDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.LoaiHinhController",
+    "Method": "Delete",
+    "RelativePath": "api/LoaiHinh/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.LoaiHinhController",
+    "Method": "EditLoaiHinh",
+    "RelativePath": "api/LoaiHinh/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.LoaiHinhDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.LoaiHinhController",
+    "Method": "GetAllLoaiHinh2",
+    "RelativePath": "api/LoaiHinh/GetallLH",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.LoaiHinhController",
+    "Method": "GetLoaiHinh",
+    "RelativePath": "api/LoaiHinh/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "GetAll",
+    "RelativePath": "api/SukienTinTuc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "GetCount",
+    "RelativePath": "api/SukienTinTuc/Count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "Create",
+    "RelativePath": "api/SukienTinTuc/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "My_websiteAPI.ModelView.SuKienTintucDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "Delete",
+    "RelativePath": "api/SukienTinTuc/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "diadiemlienquan",
+    "RelativePath": "api/SukienTinTuc/diadiemlienquan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "EditLoaiHinh",
+    "RelativePath": "api/SukienTinTuc/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.SuKienTintucDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "GetLoaiHinh",
+    "RelativePath": "api/SukienTinTuc/FillterLoaidd",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loai",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "GetTinTucDate",
+    "RelativePath": "api/SukienTinTuc/Fillterttdate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "Finbyid",
+    "RelativePath": "api/SukienTinTuc/Find",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "GetTinTucDatenow",
+    "RelativePath": "api/SukienTinTuc/Firstsktt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "GetAlltheoLH",
+    "RelativePath": "api/SukienTinTuc/loaihinh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idloaisukien",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.SukienTinTucController",
+    "Method": "SearchSukienTintuc",
+    "RelativePath": "api/SukienTinTuc/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "loaihinh",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "tinhthanh",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "danhcho",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "loaisukien",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.TinhThanhController",
+    "Method": "GetAllProvince",
+    "RelativePath": "api/TinhThanh",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.TinhThanhController",
+    "Method": "countProvince",
+    "RelativePath": "api/TinhThanh/countProvince",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.TinhThanhController",
+    "Method": "CreateProvince",
+    "RelativePath": "api/TinhThanh/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.TinhThanhDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.TinhThanhController",
+    "Method": "DeleteProvince",
+    "RelativePath": "api/TinhThanh/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.TinhThanhController",
+    "Method": "EditProvince",
+    "RelativePath": "api/TinhThanh/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "My_websiteAPI.ModelView.TinhThanhDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "My_websiteAPI.Controllers.TinhThanhController",
+    "Method": "GetProvince",
+    "RelativePath": "api/TinhThanh/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

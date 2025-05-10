@@ -1,0 +1,50 @@
+.showlistdanhgia{
+    min-height: 250px;
+     max-height: 500px;
+     overflow-y: auto;
+}
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;
+    object-position: center;
+
+ 
+    border-radius: 8px ;
+  }
+  #contentdiadiem img{
+     min-height: 300px !important;
+     max-height: 500px !important;
+     width: 100% !important;
+     object-fit: cover;
+     object-position: center;
+  }
+ #contentdiadiem p {
+    font-size: 16px !important;
+}
+@media (max-width:1200px) {
+    h4.inlinenowrap1{
+        font-size: 17px ;
+    }
+    h3.m-0.text-start{
+        font-size: 18px;
+    }
+    .col-md-12.rounded.border-1.border.h-auto.px-2  h4{
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    img.p-0.m-0.rounded{
+        width: 150px;
+    }
+
+}
+@media (max-width:500px) {
+    img.p-0.m-0.rounded{
+        width: 100px;
+    }
+
+}

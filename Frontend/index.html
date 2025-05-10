@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trang chủ</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow backgrounddark" role="status"></div>
+    </div>
+    <!-- Navbar start -->
+
+    <div class="container-fluid fixed-top">
+      <div class="container rounded-pill py-2 d-none d-lg-block bannerbg">
+        <div class="d-flex justify-content-between">
+          <div class="top-info ps-2 text-dark font-weight-bold">
+            Website tra cứu địa điểm du lịch và ẩm thực Việt Nam
+          </div>
+          <div class="pe-2">
+            
+          </div>
+        </div>
+      </div>
+      <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+          <a href="index.html" class="navbar-brand"
+            ><h1 class="display-6 textcolor">VietHorizon</h1></a
+          >
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarreponsi"
+          >
+            <span class="fa fa-bars textcolor"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-white" id="navbarreponsi">
+            <div class="navbar-nav mx-auto">
+              <a href="index.html" class="nav-item nav-link active"
+                >Trang chủ</a
+              >
+              <a href="dulich.html" class="nav-item nav-link ">Du lịch & Ẩm thực</a>
+
+              <a href="tintuc.html" class="nav-item nav-link"
+                >Sự kiện tin tức</a
+              >
+
+              <a href="contact.html" class="nav-item nav-link">Đóng góp</a>
+            </div>
+            <div class="d-flex m-3 me-0">
+              <div class="mt-2 pt-1 d-flex loginlogout">
+                <a
+                  href="#"
+                  class="text-dark nav-link mobilecss"
+                  data-bs-target="#idmodaldk"
+                  data-bs-toggle="modal"
+                >
+                  <small class="mx-1 fs-6 userlog">Đăng ký</small>
+                </a>
+                <a
+                  href="#"
+                  class="text-dark nav-link mobilecss"
+                  data-bs-target="#idmodaldn"
+                  data-bs-toggle="modal"
+                >
+                  <small class="mx-1 fs-6 userlog" >Đăng nhập</small>
+                </a>
+              </div>
+
+              <a
+                href="xemsau.html"
+                class="nav-link userindex iconxemsau "
+                style="font-size: 26px"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Danh sách xem sau"
+              >
+                <i
+                 class="fa-solid fa-map-location-dot my-auto textcolor mobilecss fs-4 mt-1"
+                ></i>
+              </a>
+              <a
+                href="account.html"
+                class="nav-link userindex accoutinfo"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                title="Thông tin tài khoản"
+              >
+                <i class="fas fa-user fa-2x my-auto textcolor mobilecss"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+    <!-- Banner  -->
+    <div class="container-fluid py-2 mb-5 bannerindedx">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-12 col-lg-6">
+            <h4 class="mb-3 text-center">Khám phá điểm đến hấp dẫn</h4>
+            <h1 class="mb-5  text-center">
+              Trải nghiệm du lịch & ẩm thực đặc sắc
+            </h1>
+
+            <div class="position-relative mx-auto d-flex px-2 py-1">
+              <a href="AIchatbot.html" class="btn backgrounddark text-white m-auto fs-6">
+                Bắt đầu một chuyến đi với AI
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div
+              id="carouselId"
+              class="carousel slide position-relative"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" role="listbox" id="danhsachimagebanner">
+               
+              </div>
+              <button
+                class="carousel-control-prev text-white backgrounddark "
+                style="font-size: 30px"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="prev"
+              >
+                &lt;
+              </button>
+              <button
+                class="carousel-control-next text-white backgrounddark"
+                style="font-size: 30px"
+                type="button"
+                data-bs-target="#carouselId"
+                data-bs-slide="next"
+              >
+                &gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featurs Section Start -->
+    <!-- tìm kiếm  -->
+    <!-- <div class="container w-100">
+      <div class="row">
+        <div
+          class="position-relative m-auto col-md-8 col-sm-12"
+          style="display: block !important"
+        >
+          <input
+            class="form-control border-2 w-100 py-3 px-4 rounded-pill"
+            type="text"
+            id="timkiemdiadiem"
+            placeholder="Bạn muốn đi đâu, ăn gì?"
+          />
+          <button
+            type="submit"
+            class="btn backgrounddark border-2 py-3 px-4 position-absolute rounded-pill text-white h-100"
+            style="top: 0; right: 0"
+            onclick="Searchdd()"
+          >
+            Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </div> -->
+    <!-- thịnh hành  -->
+    <div class="container">
+      <h3 class="p-0 mt-5 " style="text-indent: 10px;">Điểm đến thịnh hành</h3>
+      <div class="row mb-1 mt-2 justify-content-evenly listThinhHanh2">
+       
+        
+      </div>
+      <div class="row mb-2 mt-2 justify-content-evenly listThinhHanh3">
+      
+      </div>
+    </div>
+
+    <!-- Sự kiện sắp tới -->
+    <div class="container" id="sukientintucgannhat">
+
+    
+    </div>
+<!-- địa điểm  -->
+<div class="container">
+  <h3 class="p-0 mt-5 " style="text-indent: 10px;">Khám phá những địa điểm đẹp</h3>
+
+  <div class="row mb-2 mt-2 justify-content-evenly g-2 dsdddlmoi">
+
+  </div>
+
+</div>
+<!-- Món ăn  -->
+<div class="container">
+  <h3 class="p-0 mt-5 " style="text-indent: 10px;">Trải nghiệm những món ăn ngon</h3>
+
+  <div class="row mb-2 mt-2 justify-content-evenly g-2 dsddatmoi" >
+   
+  </div>
+</div>
+
+
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="bannerbg p-3 rounded">
+          <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-3 textcolora">
+                <i class="fas fa-map-marked-alt textcolor fs-1"></i>
+                <h5>Điểm đến nổi bật</h5>
+                <h4>500+</h4>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-3 textcolora">
+                <i class="fas fa-utensils textcolor fs-1"></i>
+                <h5>Địa điểm du lịch, ẩm thực</h5>
+                <h4>500+</h4>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-3 textcolora">
+                <i class="fas fa-star textcolor fs-1"></i>
+                <h5>Lượt đánh giá tích cực</h5>
+                <h4>95%</h4>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="counter bg-white rounded p-3 textcolora">
+                <i class="fas fa-users textcolor fs-1"></i>
+                <h5>Người dùng hài lòng</h5>
+                <h4>5000+</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fact Start -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid backgrounddark text-white-50 footer pt-5 mt-5">
+      <div class="container py-5">
+        <div
+          class="pb-4 mb-4"
+          style="border-bottom: 1px solid rgba(226, 175, 24, 0.5)"
+        >
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <a href="#">
+                <h1 class="text-white mb-0">VietHorizon</h1>
+                <p class="text-light mb-0">
+                  Tra cứu nhanh chóng, trải nghiệm thú vị
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-5">
+              <div class="position-relative mx-auto">
+                <input
+                class="form-control border-2 w-100 py-3 px-4 rounded-pill"
+                type="text"
+               placeholder="Email của bạn"
+              />
+              <button
+                type="submit"
+                class="btn bg-warning border-2 py-3 px-4 position-absolute rounded-pill text-white h-100"
+                style="top: 0; right: 0"
+              >
+              Đăng ký ngay
+              </button>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="d-flex justify-content-end pt-3">
+                <a
+                  class="btn btn-outline-light me-2 btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light me-2 btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light me-2 btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  class="btn btn-outline-light btn-md-square rounded-circle btnhover"
+                  href="#"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-item">
+              <h4 class="text-light mb-3">Khám phá & Trải nghiệm!</h4>
+              <p class="mb-4 text-white">
+                Tìm kiếm dễ dàng – Hành trình đáng nhớ!
+              </p>
+
+              <a
+                href="#"
+                class="btn border-white py-2 px-4 rounded-pill btnhover"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="d-flex flex-column text-start footer-item">
+              <h4 class="text-light mb-3">Về chúng tôi</h4>
+              <a class="btn-link" href="#">Giới thiệu về chúng tôi</a>
+              <a class="btn-link" href="#">Liên hệ với chúng tôi</a>
+              <a class="btn-link" href="#">Chính sách bảo mật</a>
+              <a class="btn-link" href="#">Điều khoản & Điều kiện</a>
+
+              <a class="btn-link" href="#">Câu hỏi thường gặp & Trợ giúp</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-item">
+              <h4 class="text-light mb-3">Liên hệ</h4>
+              <p>Address: Đại từ, Thái Nguyên</p>
+              <p>Email: VietHorizonsp@gmail.com</p>
+              <p>Phone: (+84)0376081540</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <span class="text-light"
+              ><a href="#"
+                ><i class="fas fa-copyright text-light me-2"></i
+                >VietHorizonsp.com.vn</a
+              >, All right reserved.</span
+            >
+          </div>
+          <div class="col-md-6 my-auto text-center text-md-end text-white">
+            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <!-- Modal login logout  -->
+
+    <div class="modal fade" id="idmodaldk" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center w-100">Đăng ký tài khoản</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 row align-items-center">
+              <label for="lastName" class="col-sm-3 col-form-label">Họ:</label>
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastnameuserup"
+                  placeholder="Nhập họ"
+                />
+                <small class="text-danger erorr1"></small>
+              </div>
+            </div>
+            <!-- Tên -->
+            <div class="mb-3 row align-items-center">
+              <label for="firstName" class="col-sm-3 col-form-label"
+                >Tên:</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firtnameuserup"
+                  placeholder="Nhập tên"
+                />
+                <small class="text-danger erorr2"></small>
+              </div>
+            </div>
+            <div class="mb-3 row align-items-center">
+              <label for="firstName" class="col-sm-3 col-form-label"
+                >Tên tài khoản:</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="usernameup"
+                  placeholder="Nhập tên tài khoản"
+                />
+                <small class="text-danger erorr3"></small>
+              </div>
+            </div>
+          
+            <!-- Email -->
+            <div class="mb-3 row align-items-center">
+              <label for="email" class="col-sm-3 col-form-label">Email:</label>
+              <div class="col-sm-9">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailuserup"
+                  placeholder="Nhập email"
+                />
+                <small class="text-danger erorr4"></small>
+              </div>
+            </div>
+            <!-- Mật khẩu -->
+            <div class="mb-3 row align-items-center">
+              <label for="password" class="col-sm-3 col-form-label"
+                >Mật khẩu:</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="passuserup1"
+                  placeholder="Nhập mật khẩu"
+                />
+                <small class="text-danger erorr5"></small>
+              </div>
+            </div>
+            <!-- Xác nhận mật khẩu -->
+            <div class="mb-3 row align-items-center">
+              <label for="confirmPassword" class="col-sm-3 col-form-label"
+                >Xác nhận mật khẩu:</label
+              >
+              <div class="col-sm-9">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="passuserup2"
+                  placeholder="Nhập lại mật khẩu"
+                />
+                <small class="text-danger erorr6"></small>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <button
+                class="btn mybutton my-2 w-50 m-auto"
+                onclick="LogUpuser()"
+              >
+                Đăng ký
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn mybuttonnot" data-bs-dismiss="modal">Huỷ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===========DN========= -->
+    <div class="modal fade" id="idmodaldn" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center">Đăng nhập</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="d-flex flex-column my-2">
+                <p class="ms-3" style="min-width: 150px">Email:</p>
+                <input
+                  type="text"
+                  class="form-control text-dark"
+                  id="emaillogin"
+                />
+                <span class="erorrlogus text-danger mt-1"></span>
+              </div>
+
+              <div class="d-flex flex-column my-2 mt-3">
+                <p class="ms-3" style="min-width: 150px">Password:</p>
+                <input type="text" class="form-control" id="passlogin" />
+                <span class="erorrlogps text-danger mt-1"></span>
+              </div>
+
+              <div class="d-flex">
+                <button
+                  type="button"
+                  class="btn mybutton my-2 w-50 m-auto"
+                  onclick="Userlogin()"
+                >
+                  Đăng nhập
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn mybuttonnot" data-bs-dismiss="modal">Huỷ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal login logout  -->
+    <div class="back-to-top d-flex flex-column">
+      <a href="AIchatbot.html" class="btn animated-border bg-info text-white my-3 rounded-circle">AI</a>
+      <a href="#" class="btn animated-border bg-info text-white mb-5 rounded-circle">
+        <i class="fa fa-arrow-up"></i>
+      </a>
+    </div>
+  
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/account.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

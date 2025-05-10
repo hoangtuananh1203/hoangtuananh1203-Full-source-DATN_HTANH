@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin HANH-MOBILE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="admin.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+  </head>
+  <body>
+    <!-- Top container -->
+
+    <div class="containermain p-0 d-flex">
+      <!-- Sidebar/menu -->
+
+      <div class="menucontainer bannerbg">
+        <nav class="" style="z-index: 100; margin-top: 55px" id="mySidebar">
+          <hr class="mb-2 pb-0" />
+          <div class=" ">
+            <a
+              class="nav-link textcolor navlinka"
+              data-bs-toggle="tooltip"
+              data-placement="right"
+              title="Chuyển sang trang chủ"
+              style="
+                font-weight: 600 !important;
+                color: var(--text_color) !important;
+                font-size: 22px !important;
+              "
+              href="/index.html"
+            >
+              <i class="fa-solid fa-house"></i>
+            </a>
+
+            <div class="dropdown">
+              <a
+                class="btn dropdown-toggle navlinka"
+                style="width: 100%; text-align: start"
+                data-toggle="collapse"
+                href="#thongkettnav"
+                role="button"
+                aria-expanded="false"
+                aria-controls="thongkettnav"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Thống kê thông tin"
+              >
+                <span class="textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-chart-simple"></i
+                ></span>
+              </a>
+
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                aria-expanded="false"
+                data-toggle="collapse"
+                href="#donggop"
+                aria-expanded="false"
+                aria-controls="donggop"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý đóng góp"
+              >
+                <!-- đóng góp  -->
+                <span
+                  class="pe-5 textcolor"
+                  style="font-weight: 400 !important"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                </span>
+              </button>
+            </div>
+            <!-- tin tức  -->
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý sự kiện - tin tức"
+              >
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-newspaper"></i>
+                </span>
+              </button>
+              <div class="dropdown-menu">
+                <a
+                  class="nav-link dropdown-item"
+                  data-toggle="collapse"
+                  href="#sktt1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="sktt1"
+                >
+                  Danh sách sự kiện tin tức
+                </a>
+                <a
+                  class="nav-link dropdown-item"
+                  data-toggle="collapse"
+                  href="#sktt2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="sktt2"
+                >
+                  Thêm sự kiện tin tức
+                </a>
+              </div>
+            </div>
+            <!-- menu địa điểm  -->
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý địa điểm"
+              >
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-map-location-dot"></i>
+                </span>
+              </button>
+              <div class="dropdown-menu">
+                <a
+                  class="nav-link dropdown-item"
+                  data-toggle="collapse"
+                  href="#diadiem1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="diadiem1"
+                >
+                  Danh sách địa điểm
+                </a>
+                <a
+                  class="nav-link dropdown-item"
+                  data-toggle="collapse"
+                  href="#diadiem2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="diadiem2"
+                >
+                  Thêm địa điểm
+                </a>
+                <a
+                  class="nav-link dropdown-item"
+                  data-toggle="collapse"
+                  href="#diadiem3"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="diadiem3"
+                >
+                  Sửa địa điểm
+                </a>
+              </div>
+            </div>
+            <!-- Quản lý người dùng  -->
+            <div class="dropdown">
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="collapse"
+                href="#nguoidung"
+                aria-expanded="false"
+                aria-controls="nguoidung"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý người dùng"
+              >
+                <!-- ngươi dùng  -->
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-users"></i>
+                </span>
+              </button>
+            </div>
+            <!-- đánh giá  -->
+            <div class="dropdown">
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="collapse"
+                href="#danhgiadd"
+                aria-expanded="false"
+                aria-controls="danhgiadd"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý đánh giá"
+              >
+                <!-- Loại hình du lich  -->
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-list-check"></i
+                ></span>
+              </button>
+            </div>
+            <!-- đối tượng  -->
+            <div class="dropdown">
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="collapse"
+                href="#doituong1"
+                aria-expanded="false"
+                aria-controls="doituong1"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý đối tượng"
+              >
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-users-viewfinder"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="collapse"
+                href="#tinhthanh1"
+                aria-expanded="false"
+                aria-controls="tinhthanh1"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý tỉnh thành"
+              >
+                <!-- tỉnh thành  -->
+                <span
+                  class="pe-5 textcolor"
+                  style="font-weight: 400 !important"
+                >
+                  🗺
+                </span>
+              </button>
+            </div>
+            <div class="dropdown">
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="collapse"
+                href="#loaihinh1"
+                aria-expanded="false"
+                aria-controls="loaihinh1"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Quản lý loại hình"
+              >
+                <!-- Loại hình du lich  -->
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  >🏖
+                </span>
+              </button>
+            </div>
+            <!-- menu Thông tin website  -->
+            <div class="dropdown">
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                href="#thongtinwebsite"
+                data-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="thongtinwebsite"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Thông tin website"
+              >
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-globe"></i
+                ></span>
+              </button>
+              <div class="dropdown-menu">
+                <a
+                  class="btn nav-link dropdown-item"
+                  data-toggle="collapse"
+                  href="#thongtinwebsite"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="thongtinwebsite"
+                >
+                  Thêm mới thông tin
+                </a>
+              </div>
+            </div>
+            <!-- đổi mật khẩu  -->
+            <div class="dropdown">
+              <button
+                class="btn navlinka"
+                style="width: 100%; text-align: start"
+                type="button"
+                data-toggle="collapse"
+                href="#doimatkhau"
+                role="button"
+                aria-expanded="false"
+                aria-controls="doimatkhau"
+                data-bs-toggle="tooltip"
+                data-placement="right"
+                title="Cài đặt tài khoản"
+              >
+                <span class="pe-5 textcolor" style="font-weight: 400 !important"
+                  ><i class="fa-solid fa-gear"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- !PAGE CONTENT! -->
+      <div class="contentmain ml-0 mr-0 mb-0 p-0">
+        <div
+          class="w-100 bannerbg text-center font-weight-bold d-flex justify-content-between"
+        >
+          <h5 class="pt-3 textcolor">Welcome admin</h5>
+          <h2 class="pt-2 textcolor font-weight-bold">VietHorizon</h2>
+          <button class="btn logoutadmin" onclick="LogoutAccount()">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+        </div>
+        <div class="" id="thongkettnav">
+          <div class="card card-body">
+            <header class="card-header" style="padding-top: 22px">
+              <h5>
+                <b class="textcolor "><i class="fa fa-dashboard "></i> Thống kê </b>
+              </h5>
+            </header>
+
+            <div class="card-body d-flex justify-content-around">
+            
+                <div class="m-2 rounded border border-1 px-5 py-2 w-25">
+                  <div class="d-flex justify-content-center">
+                    <i class="fa fa-comment w3-xxxlarge textcolor " style="font-size: 45px;"></i>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center">
+                    <h3 id="sodonggop">1</h3>
+                  </div>
+                  <div class=""></div>
+                  <h4 class="text-center">Đóng góp </h4>
+                </div>
+            
+              
+                <div class="m-2 rounded border border-1 px-5 py-2 w-25">
+                  <div class="d-flex justify-content-center">
+                    <i class="fa fa-eye w3-xxxlarge textcolor"style="font-size: 45px;"></i>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center">
+                    <h3 id="soluotxem">10</h3>
+                  </div>
+                  <div class=""></div>
+                  <h4 class="text-center">Tổng lượt xem</h4>
+                </div>
+             
+              
+                <div class="m-2 rounded border border-1 px-5 py-2 w-25 bg-">
+                  <div class="d-flex justify-content-center">
+                    <i class="fa fa-share-alt w3-xxxlarge textcolor"style="font-size: 45px;"></i>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center">
+                    <h3 id="sosukien">1</h3>
+                  </div>
+                  <div class=""></div>
+                  <h4 class="text-center">Sự kiện -  tin tức</h4>
+                </div>
+              
+              
+                <div class="m-2 rounded border border-1 px-5 py-2 w-25">
+                  <div class="d-flex justify-content-center">
+                    <i class="fa fa-users w3-xxxlarge textcolor"style="font-size: 45px;"></i>
+                  </div>
+
+
+                  <div class="d-flex justify-content-center">
+                    <h3 id="songuoidung">1</h3>
+                  </div>
+                  <div class=""></div>
+                  <h4 class="text-center">Người dùng</h4>
+                </div>
+             
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center flex-column">
+
+              
+                
+                  <div class="container  d-flex ">
+              
+                    <div class=" d-flex justify-content-center mt-4 ml-0">
+                      <canvas  id="myChart" width="700" height="500"></canvas>
+                    </div>
+                    <br>
+                 
+                    <div  class="mt-3">
+                      <canvas id="myChart2" width="450" height="500"></canvas>
+                    </div>
+                   
+                
+                </div>
+              </div>
+            </div>
+            <hr />
+          
+          </div>
+        </div>
+        <div class="collapse m-2" id="donggop">
+          <div class="card card-body">
+            <div class="mb-3 w-100 d-flex justify-content-between">
+              <div class="d-flex w-75">
+                <input
+                  type="text"
+                  id="timdonggop"
+                  class="form-control w-75"
+                  placeholder="Nhập từ khoá tìm kiếm?"
+                />
+                <select name="" id="trangthaidonggop" class="form-control mx-3">
+                  <option value="">Tất cả</option>
+                  <option value="0">Đóng góp mới</option>
+                  <option value="1">Đã xem xét</option>
+                </select>
+                <button
+                  class="btn mybuttonok btnsearchadmin"
+                  onclick="timkiemdonggop(1)"
+                >
+                  Tìm kiếm
+                </button>
+              </div>
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+            <div class="w-100 p-0 m-0">
+              <label class="text-right pr-2 m-0" id="sodonggopmoi"></label>
+            </div>
+            <table class="table-bordered rounded">
+              <thead class="myheadertb rounded">
+                <tr>
+                  <th style="text-align: center; width: 3%">Id</th>
+                  <th style="text-align: center; width: 10%">Người đóng góp</th>
+                  <th style="text-align: center; width: 18%">Tiêu đề</th>
+                  <th style="text-align: center; width: 30%">Nội dung</th>
+                  <th style="text-align: center; width: 10%">Email</th>
+                  <th style="text-align: center; width: 10%">Sđt</th>
+                  <th style="text-align: center; width: 7%">Ngày thêm</th>
+                  <th style="text-align: center; width: 15%">Trạng thái</th>
+                </tr>
+              </thead>
+              <tbody class="danhsachdonggop"></tbody>
+            </table>
+            <div class="w-100 d-flex mt-3">
+              <div class="m-auto">
+                <nav aria-label=" phantrang example ">
+                  <ul class="pagination" id="pagination"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="sktt1">
+          <div class="card card-body">
+            <h3 class="">Danh sách sự kiện tin tức</h3>
+            <div class="mb-3 w-100 d-flex justify-content-between">
+              <div class="d-flex" style="width: 85%">
+                <input
+                  type="text"
+                  id="timsukien"
+                  class="form-control w-50"
+                  placeholder="Nhập từ khoá tìm kiếm?"
+                />
+                <select
+                  name=""
+                  id="sltinhthanhsk"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                </select>
+                <select
+                  name=""
+                  id="slloaihinhsk"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                </select>
+                <select
+                  name=""
+                  id="lsdoituongsk"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                </select>
+                <select
+                  name=""
+                  id="slloaisk"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                  <option value="1">Du lịch</option>
+                  <option value="2">Ẩm thực</option>
+                  <option value="3">Khác</option>
+                </select>
+
+                <button
+                  class="btn mybuttonok btnsearchadmin"
+                  onclick="Timkiemsktst(1)"
+                >
+                  Tìm kiếm
+                </button>
+              </div>
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+            <div class="w-100 p-0 m-0 d-flex justify-content-between">
+              <label class="text-right pr-2 m-0" id="sosktt"></label>
+              <div class="d-flex mb-1 p-0 mt-0">
+                <label class="pt-2">Xắp xếp theo:</label>
+                <select
+                  name=""
+                  id="xxtheosk"
+                  class="form-control pb-1 border-0"
+                  style="width: 120px; height: 30px"
+                >
+                  <option value="">Mặc định</option>
+                  <option value="tieude">Tiêu đề</option>
+                  <option value="date">Theo ngày</option>
+                </select>
+              </div>
+            </div>
+            <div class="dssktt">
+              <table class="table-bordered rounded">
+                <thead class="myheadertb rounded">
+                  <tr>
+                    <th style="text-align: center; min-width: 50px">Id</th>
+                    <th style="text-align: center; min-width: 200px">
+                      Tiêu đề
+                    </th>
+                    <th style="text-align: center; min-width: 250px">
+                      Mô tả ngắn
+                    </th>
+                    <th style="text-align: center; min-width: 150px">
+                      Địa chỉ-sđt
+                    </th>
+                    <th style="text-align: center; min-width: 100px">
+                      Thời gian(bắt đầu - kết thúc)
+                    </th>
+
+                    <th style="text-align: center; min-width: 300px">
+                      Mô tả 1
+                    </th>
+                    <th style="text-align: center; min-width: 170px">Thuộc</th>
+                    <th style="text-align: center; min-width: 350px">Image</th>
+                    <th style="text-align: center; min-width: 130px"></th>
+                  </tr>
+                </thead>
+                <tbody class="danhsachsukien"></tbody>
+              </table>
+            </div>
+            <div class="w-100 d-flex mt-3">
+              <div class="m-auto">
+                <nav aria-label=" phantrang example ">
+                  <ul class="pagination" id="paginationsk"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="sktt2">
+          <div class="card card-body d-flex">
+            <div class="col-lg-12">
+              <div class="d-flex">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="Idtieude2">Id</label>
+                    <input
+                      type="text"
+                      disabled
+                      class="form-control"
+                      id="Idtieude2"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="tieudesk2">Tiêu đề</label>
+                    <input type="text" class="form-control" id="tieudesk2" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="motangansk2">Mô tả ngắn</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id="motangansk2"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="diachisk2">Địa chỉ</label>
+                    <input type="text" class="form-control" id="diachisk2" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="mota2sk">Nội dung</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      style="height: 610px"
+                      id="mota2sk"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="sltinhthanhsk2">Tỉnh thành</label>
+                      <select name="" id="sltinhthanhsk2" class="form-control">
+                        <option value="">Tất cả</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaihinhsk2">Loại hình</label>
+                      <select name="" id="slloaihinhsk2" class="form-control">
+                        <option value="">Tất cả</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="lsdoituongsk2">Dành cho</label>
+                      <select name="" id="lsdoituongsk2" class="form-control">
+                        <option value="">Tất cả</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaisk2">Loại sự kiện</label>
+                      <select name="" id="slloaisk2" class="form-control">
+                        <option value="1">Du lịch</option>
+                        <option value="2">Ẩm thực</option>
+                        <option value="3">Khác</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="dateosk2">Ngày bắt đầu</label>
+                      <input type="date" class="form-control" id="dateosk2" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng chọn ngày bắt đầu!
+                      </p>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="datecsk2">Ngày kết thúc</label>
+                      <input type="date" class="form-control" id="datecsk2" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng chọn ngày kết thúc!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="giask2">Giá</label>
+                      <input type="number" class="form-control" id="giask2" />
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="sdtsk2">Số điện thoại</label>
+                      <input type="text" class="form-control" id="sdtsk2" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain21">Image 1</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain21"
+                        onchange="showfileimage('imageskmain21', 'imageskmain21show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageskmain21show"
+                          class="d-none"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain22">Image 2</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain22"
+                        onchange="showfileimage('imageskmain22', 'imageskmain22show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          class="d-none"
+                          id="imageskmain22show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain23">Image 3</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain23"
+                        onchange="showfileimage('imageskmain23', 'imageskmain23show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          class="d-none"
+                          id="imageskmain23show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain24">Image 4</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain24"
+                        onchange="showfileimage('imageskmain24', 'imageskmain24show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageskmain24show"
+                          height="100%"
+                          class="d-none"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain25">Image 5</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain25"
+                        onchange="showfileimage('imageskmain25', 'imageskmain25show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          height="100%"
+                          class="d-none"
+                          id="imageskmain25show"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain26">Image 6</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain26"
+                        onchange="showfileimage('imageskmain26', 'imageskmain26show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          class="d-none"
+                          id="imageskmain26show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-lg-12 d-flex">
+                <button class="btn mybuttonok m-auto px-5" onclick="Themsktt()">
+                  Thêm
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="sktt3">
+          <div class="card card-body d-flex">
+            <div class="col-lg-12">
+              <div class="d-flex">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="Idtieude1">Id</label>
+                    <input
+                      type="text"
+                      disabled
+                      class="form-control"
+                      id="Idtieude1"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="tieudesk1">Tiêu đề</label>
+                    <input type="text" class="form-control" id="tieudesk1" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="motangansk1">Mô tả ngắn</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id="motangansk1"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="diachisk1">Địa chỉ</label>
+                    <input type="text" class="form-control" id="diachisk1" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="mota1sk">Nội dung</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      style="height: 610px"
+                      id="mota1sk"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="sltinhthanhsk1">Tỉnh thành</label>
+                      <select name="" id="sltinhthanhsk1" class="form-control">
+                        <option value="">Tất cả</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaihinhsk1">Loại hình</label>
+                      <select name="" id="slloaihinhsk1" class="form-control">
+                        <option value="">Tất cả</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="lsdoituongsk1">Dành cho</label>
+                      <select name="" id="lsdoituongsk1" class="form-control">
+                        <option value="">Tất cả</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaisk1">Loại sự kiện</label>
+                      <select name="" id="slloaisk1" class="form-control">
+                        <option value="1">Du lịch</option>
+                        <option value="2">Ẩm thực</option>
+                        <option value="3">Khác</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="dateosk1">Ngày bắt đầu</label>
+                      <input type="date" class="form-control" id="dateosk1" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="datecsk1">Ngày kết thúc</label>
+                      <input type="date" class="form-control" id="datecsk1" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="giask1">Giá</label>
+                      <input type="text" class="form-control" id="giask1" />
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="sdtsk1">Số điện thoại</label>
+                      <input type="text" class="form-control" id="sdtsk1" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain1">Image 1</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain1"
+                        onchange="showfileimage('imageskmain1', 'imageskmain1show')"
+                      />
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageskmain1show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain2">Image 2</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain2"
+                        onchange="showfileimage('imageskmain2', 'imageskmain2show')"
+                      />
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageskmain2show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain3">Image 3</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain3"
+                        onchange="showfileimage('imageskmain3', 'imageskmain3show')"
+                      />
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageskmain3show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain4">Image 4</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain4"
+                        onchange="showfileimage('imageskmain4', 'imageskmain4show')"
+                      />
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageskmain4show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain5">Image 5</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain5"
+                        onchange="showfileimage('imageskmain5', 'imageskmain5show')"
+                      />
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          height="100%"
+                          id="imageskmain5show"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageskmain6">Image 6</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageskmain6"
+                        onchange="showfileimage('imageskmain6', 'imageskmain6show')"
+                      />
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageskmain6show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-lg-12 d-flex">
+                <button class="btn mybuttonok m-auto px-5" onclick="Suasktt()">
+                  Lưu
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="diadiem1">
+          <div class="card card-body">
+            <h4 class="pt-0 pb-0 mt-0">Danh sách địa điểm</h4>
+            <div class="mb-1 w-100 d-flex justify-content-between">
+              <div class="d-flex" style="width: 85%">
+                <input
+                  type="text"
+                  id="timkiemdiadiem"
+                  class="form-control w-50"
+                  placeholder="Nhập từ khoá tìm kiếm?"
+                />
+                <select
+                  name=""
+                  id="sltinhthanhdd"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                </select>
+
+                <select
+                  name=""
+                  id="slloaihinhdd"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                </select>
+
+                <select
+                  name=""
+                  id="lsdoituongdd"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                </select>
+
+                <select
+                  name=""
+                  id="slloaidd"
+                  class="form-control mx-1"
+                  style="width: 15%"
+                >
+                  <option value="">Tất cả</option>
+                  <option value="1">Du lịch</option>
+                  <option value="2">Ẩm thực</option>
+                  <option value="3">Khác</option>
+
+                </select>
+
+                <button
+                  class="btn mybuttonok btnsearchadmin"
+                  onclick="Timkiemdiadiem()"
+                >
+                  Tìm kiếm
+                </button>
+              </div>
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+            <div class="w-100 p-0 m-0 d-flex justify-content-between">
+              <label
+                class="text-right pr-2 pt-3 pb-0 mb-0"
+                id="sodiadiem"
+              ></label>
+              <div class="d-flex mb-1 p-0 mt-0">
+                <label class="pt-1">Xắp xếp theo:</label>
+                <select
+                  name=""
+                  id="xxtheodd"
+                  class="form-control pb-1 border-0"
+                  style="width: 120px; height: 30px; font-size: 15px"
+                >
+                  <option value="">Mặc định</option>
+                  <option value="tieude">Tiêu đề</option>
+                  <option value="luotxemtang">Lượt xem tăng dần</option>
+                  <option value="luotxemgiam">Lượt xem giảm dần</option>
+                </select>
+              </div>
+            </div>
+            <div class="tablediadiem">
+              <table class="table-bordered rounded">
+                <thead class="myheadertb rounded">
+                  <tr>
+                    <th style="text-align: center; min-width: 50px">Id</th>
+                    <th style="text-align: center; min-width: 150px">
+                      Tiêu đề
+                    </th>
+                    <th style="text-align: center; min-width: 170px">
+                      Mô tả ngắn
+                    </th>
+                    <th style="text-align: center; min-width: 200px">
+                      Thông tin về địa điểm
+                    </th>
+                    <th style="text-align: center; max-width: 210px">Map</th>
+
+                    <th style="text-align: center; min-width: 300px">
+                      Nội dung
+                    </th>
+                    <th style="text-align: center; min-width: 290px">Thuộc</th>
+                    <th style="text-align: center; min-width: 300px">Image</th>
+                    <th style="text-align: center; min-width: 150px"></th>
+                  </tr>
+                </thead>
+                <tbody class="danhsachdiadiem"></tbody>
+              </table>
+            </div>
+            <div class="w-100 d-flex mt-3">
+              <div class="m-auto">
+                <nav aria-label=" phantrang example ">
+                  <ul class="pagination" id="paginationdiadiem"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="diadiem2">
+          <div class="card card-body d-flex">
+            <div class="col-lg-12">
+              <h4>Thêm địa điểm mới</h4>
+              <div class="d-flex">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="tieudedd">Tiêu đề</label>
+                    <input type="text" class="form-control" id="tieudedd" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="motangandd">Mô tả ngắn</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id="motangandd"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="urlmapddd1">Url map</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id="urlmapddd1"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-lg-6 p-0">
+                      <label for="mocuadongcuadd">Ngày mở cửa</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="mocuadongcuadd"
+                      />
+                    </div>
+                    <div class="form-group col-lg-6 p-0 ml-2 pr-2">
+                      <label for="dateOCdd">Giờ mở</label>
+                      <input type="text" class="form-control" id="dateOCdd" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="diachidd">Địa chỉ</label>
+                    <input type="text" class="form-control" id="diachidd" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="emaildd">Email</label>
+                    <input type="text" class="form-control" id="emaildd" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-lg-4 p-0">
+                      <label for="sdtdd">SDT:</label>
+                      <input type="text" class="form-control" id="sdtdd" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                    <div class="form-group col-lg-4 p-0 pl-2">
+                      <label for="tinhtrangdd">Tình trạng:</label>
+                      <select name="" class="form-control" id="tinhtrangdd">
+                        <option value="true">Đang mở cửa</option>
+                        <option value="false">Đã đóng mở cửa</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-lg-4 p-0 ml-2 pr-2">
+                      <label for="giadd">Giá:</label>
+                      <input type="number" class="form-control" id="giadd" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="noidungdd">Nội dung</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      style="height: 300px"
+                      id="noidungdd"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="sltinhthanhdd1">Tỉnh thành</label>
+                      <select
+                        name=""
+                        id="sltinhthanhdd1"
+                        class="form-control"
+                      ></select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaihinhdd1">Loại hình</label>
+                      <select
+                        name=""
+                        id="slloaihinhdd1"
+                        class="form-control"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="lsdoituongdd1">Dành cho</label>
+                      <select
+                        name=""
+                        id="lsdoituongdd1"
+                        class="form-control"
+                      ></select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaidd1">Loại sự kiện</label>
+                      <select name="" id="slloaidd1" class="form-control">
+                        <option value="1">Du lịch</option>
+                        <option value="2">Ẩm thực</option>
+                        <option value="3">Khác</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageddmain21">Image 1</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageddmain21"
+                        onchange="showfileimage('imageddmain21', 'imageddmain21show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageddmain21show"
+                          class="d-none"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageddmain22">Image 2</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageddmain22"
+                        onchange="showfileimage('imageddmain22', 'imageddmain22show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          class="d-none"
+                          id="imageddmain22show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageddmain23">Image 3</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageddmain23"
+                        onchange="showfileimage('imageddmain23', 'imageddmain23show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          class="d-none"
+                          id="imageddmain23show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageddmain24">Image 4</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageddmain24"
+                        onchange="showfileimage('imageddmain24', 'imageddmain24show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imageddmain24show"
+                          height="100%"
+                          class="d-none"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageddmain25">Image 5</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageddmain25"
+                        onchange="showfileimage('imageddmain25', 'imageddmain25show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          height="100%"
+                          class="d-none"
+                          id="imageddmain25show"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imageddmain26">Image 6</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imageddmain26"
+                        onchange="showfileimage('imageddmain26', 'imageddmain26show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          class="d-none"
+                          id="imageddmain26show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-lg-12 d-flex">
+                <button
+                  class="btn mybuttonok m-auto px-5"
+                  onclick="Themdiadiem()"
+                >
+                  Thêm
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="diadiem3">
+          <div class="card card-body d-flex">
+            <div class="col-lg-12">
+              <div class="d-flex">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="idddd">Id</label>
+                    <input type="text" class="form-control" id="idddd" />
+                  </div>
+                  <div class="form-group">
+                    <label for="tieudeddd">Tiêu đề</label>
+                    <input type="text" class="form-control" id="tieudeddd" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="motanganddd">Mô tả ngắn</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id="motanganddd"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="urlmapdddd1">Url map</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id="urlmapdddd1"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-lg-6 p-0">
+                      <label for="mocuadongcuaddd">Ngày mở cửa</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="mocuadongcuaddd"
+                      />
+                    </div>
+                    <div class="form-group col-lg-6 p-0 ml-2 pr-2">
+                      <label for="dateOCddd">Giờ mở</label>
+                      <input type="text" class="form-control" id="dateOCddd" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="diachiddd">Địa chỉ</label>
+                    <input type="text" class="form-control" id="diachiddd" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="emailddd">Email</label>
+                    <input type="text" class="form-control" id="emailddd" />
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-lg-4 p-0">
+                      <label for="sdtddd">SDT:</label>
+                      <input type="text" class="form-control" id="sdtddd" />
+                      <p class="text-danger d-none fs-6">
+                        Vui lòng nhập trường này!
+                      </p>
+                    </div>
+                    <div class="form-group col-lg-4 p-0 pl-2">
+                      <label for="tinhtrangddd">Tình trạng:</label>
+                      <select name="" class="form-control" id="tinhtrangddd">
+                        <option value="true">Đang mở cửa</option>
+                        <option value="false">Đã đóng mở cửa</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-lg-4 p-0 ml-2 pr-2">
+                      <label for="giaddd">Giá:</label>
+                      <input type="text" class="form-control" id="giaddd" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="noidungddd">Nội dung</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      style="height: 300px"
+                      id="noidungddd"
+                    ></textarea>
+                    <p class="text-danger d-none fs-6">
+                      Vui lòng nhập trường này!
+                    </p>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="sltinhthanhdd2">Tỉnh thành</label>
+                      <select
+                        name=""
+                        id="sltinhthanhdd2"
+                        class="form-control"
+                      ></select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaihinhdd2">Loại hình</label>
+                      <select
+                        name=""
+                        id="slloaihinhdd2"
+                        class="form-control"
+                      ></select>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-6 p-0">
+                      <label for="lsdoituongdd2">Dành cho</label>
+                      <select
+                        name=""
+                        id="lsdoituongdd2"
+                        class="form-control"
+                      ></select>
+                    </div>
+                    <div class="form-group col-6 p-0 ml-2 pr-2">
+                      <label for="slloaidd2">Loại sự kiện</label>
+                      <select name="" id="slloaidd2" class="form-control">
+                        <option value="1">Du lịch</option>
+                        <option value="2">Ẩm thực</option>
+                        <option value="3">Khác</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imagedddmain21">Image 1</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imagedddmain21"
+                        onchange="showfileimage('imagedddmain21', 'imagedddmain21show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imagedddmain21show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imagedddmain22">Image 2</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imagedddmain22"
+                        onchange="showfileimage('imagedddmain22', 'imagedddmain22show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imagedddmain22show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imagedddmain23">Image 3</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imagedddmain23"
+                        onchange="showfileimage('imagedddmain23', 'imagedddmain23show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imagedddmain23show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imagedddmain24">Image 4</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imagedddmain24"
+                        onchange="showfileimage('imagedddmain24', 'imagedddmain24show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imagedddmain24show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imagedddmain25">Image 5</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imagedddmain25"
+                        onchange="showfileimage('imagedddmain25', 'imagedddmain25show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          height="100%"
+                          id="imagedddmain25show"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex col-lg-12 p-0">
+                    <div class="form-group col-4 p-0">
+                      <label for="imagedddmain26">Image 6</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="imagedddmain26"
+                        onchange="showfileimage('imagedddmain26', 'imagedddmain26show')"
+                      />
+                      <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                    </div>
+                    <div class="form-group col-8 p-0 ml-2 pr-2">
+                      <div class="" style="height: 200px">
+                        <img
+                          src="/img/"
+                          width="100%"
+                          id="imagedddmain26show"
+                          height="100%"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-lg-12 d-flex">
+                <button
+                  class="btn mybuttonok m-auto px-5"
+                  onclick="Suadiadiem()"
+                >
+                  Lưu
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="nguoidung">
+          <div class="card card-body">
+            <h4 class="">Danh sách tài khoản người dùng</h4>
+            <div class="mb-3 w-100 d-flex justify-content-between">
+              <div class="d-flex" style="width: 85%">
+                <input
+                  type="text"
+                  id="timkiemnguoidunbg"
+                  class="form-control w-50"
+                  placeholder="Nhập email người dùng?"
+                />
+
+                <button
+                  class="btn mybuttonok btnsearchadmin mx-2"
+                  onclick="timkiemnguoidung()"
+                >
+                  Tìm kiếm
+                </button>
+              </div>
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+            <div class="w-100 p-0 m-0">
+              <label class="text-right pr-2 m-0" id="sotaikhoan"></label>
+            </div>
+            <table class="table-bordered rounded w-75">
+              <thead class="myheadertb rounded">
+                <tr>
+                  <th style="text-align: center">Id người dùng</th>
+                  <th style="text-align: center">Tên tài khoản</th>
+                  <th style="text-align: center">Email</th>
+                  <th style="text-align: center"></th>
+                </tr>
+              </thead>
+              <tbody class="danhsachtaikhoan"></tbody>
+            </table>
+            <div class="w-100 d-flex mt-3">
+              <div class="m-auto">
+                <nav aria-label=" phantrang example ">
+                  <ul class="pagination" id="paginationnguoidung"></ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="doituong1">
+          <div class="d-flex w-100">
+            <div class="card card-body col-lg-8 m-2">
+              <h3 class="">Danh sách đối tượng</h3>
+              <div class="mb-3 w-100 d-flex justify-content-between">
+                <div class="d-flex" style="width: 85%">
+                  <input
+                    type="text"
+                    id="seardoituongadmin"
+                    class="form-control w-50"
+                    placeholder="Nhập từ khoá tìm kiếm?"
+                  />
+
+                  <button
+                    class="btn mybuttonok btnsearchadmin ml-2"
+                    onclick="timkiemdoituong()"
+                  >
+                    Tìm kiếm
+                  </button>
+                </div>
+
+                <div class="col-lg-4">
+                  <button class="btn btn-secondary close-btn mybuttonnot">
+                    Thoát danh sách
+                  </button>
+                </div>
+              </div>
+              <div class="w-100 p-0 m-0">
+                <label class="text-right p-0 m-0" id="sodoituongadmin"></label>
+              </div>
+              <table class="table-bordered rounded w-100">
+                <thead class="myheadertb rounded">
+                  <tr>
+                    <th class="p-2 text-center" style="width: 10%">Id</th>
+                    <th class="p-2 text-center" style="width: 50%">
+                      Tên đối tượng
+                    </th>
+                    <th class="p-2 text-center" style="width: 30%"></th>
+                  </tr>
+                </thead>
+                <tbody class="danhsachdoituong"></tbody>
+              </table>
+            </div>
+            <div class="col-lg-4 border border-1 rounded m-2">
+              <h2>Thêm đối tượng</h2>
+              <div class="w-100">
+                <div class="form-group">
+                  <label>Id:</label>
+                  <input type="text" class="form-control" disabled />
+                </div>
+                <div class="form-group">
+                  <label for="tendoituong1">Tên đối tượng:</label>
+                  <input type="text" class="form-control" id="tendoituong1" />
+                </div>
+              </div>
+
+              <div class="w-100 my-auto mx-3">
+                <div class="form-group d-flex">
+                  <button
+                    class="btn mybuttonok px-4 m-4 mx-auto"
+                    onclick="Themdoituong()"
+                  >
+                    Thêm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="doituong2">
+          <div class="card card-body">
+            <h2>Sửa đối tượng</h2>
+
+            <div class="col-lg-8 d-flex">
+              <div class="w-50">
+                <div class="form-group">
+                  <label for="iddoituong">Id:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="iddoituong"
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tendoituongedit">Tên đối tượng:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="tendoituongedit"
+                  />
+                </div>
+              </div>
+
+              <div class="w-50 my-auto mx-3">
+                <div class="form-group">
+                  <button
+                    class="btn mybuttonok py-2 mt-4"
+                    onclick="Suadoituong()"
+                  >
+                    Lưu
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="tinhthanh1">
+          <div class="d-flex w-100">
+            <div class="card card-body col-lg-8 m-2">
+              <h3 class="">Danh sách tỉnh thành</h3>
+              <div class="mb-3 w-100 d-flex justify-content-between">
+                <div class="d-flex" style="width: 85%">
+                  <input
+                    type="text"
+                    id="seartinhthanhadmin"
+                    class="form-control w-50"
+                    placeholder="Nhập từ khoá tìm kiếm?"
+                  />
+
+                  <button
+                    class="btn mybuttonok btnsearchadmin ml-2"
+                    onclick="timkiemtinhthanh()"
+                  >
+                    Tìm kiếm
+                  </button>
+                </div>
+
+                <div class="col-lg-4">
+                  <button class="btn btn-secondary close-btn mybuttonnot">
+                    Thoát danh sách
+                  </button>
+                </div>
+              </div>
+              <div class="w-100 p-0 m-0">
+                <label class="text-right p-0 m-0" id="sotinhthanhadmin"></label>
+              </div>
+              <table class="table-bordered rounded w-100">
+                <thead class="myheadertb rounded">
+                  <tr>
+                    <th class="p-2 text-center" style="width: 10%">Id</th>
+                    <th class="p-2 text-center" style="width: 50%">
+                      Tên tỉnh thành
+                    </th>
+                    <th class="p-2 text-center" style="width: 30%"></th>
+                  </tr>
+                </thead>
+                <tbody class="danhsachtinhthanh"></tbody>
+              </table>
+            </div>
+            <div class="col-lg-4 border border-1 rounded m-2">
+              <h3>Thêm tỉnh thành</h3>
+              <div class="w-100">
+                <div class="form-group">
+                  <label for="tentinhthanh1">Tên tỉnh thành:</label>
+                  <input type="text" class="form-control" id="tentinhthanh1" />
+                </div>
+              </div>
+
+              <div class="w-100 my-auto mx-3">
+                <div class="form-group d-flex">
+                  <button
+                    class="btn mybuttonok px-4 m-4 mx-auto"
+                    onclick="Themtinhthanh()"
+                  >
+                    Thêm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collapse m-2" id="tinhthanh2">
+          <div class="card card-body">
+            <h3>Sửa tỉnh thành</h3>
+
+            <div class="col-lg-8 d-flex">
+              <div class="w-50">
+                <div class="form-group">
+                  <label for="idtinhthanh">Id:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="idtinhthanh"
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tentinhthanh2">Tên đối tượng:</label>
+                  <input type="text" class="form-control" id="tentinhthanh2" />
+                </div>
+              </div>
+
+              <div class="w-50 my-auto mx-3">
+                <div class="form-group">
+                  <button
+                    class="btn mybuttonok py-2 mt-4"
+                    onclick="SuaTinhthanh()"
+                  >
+                    Lưu
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Loại hình getasll -->
+        <div class="collapse m-2" id="loaihinh1">
+          <div class="d-flex w-100">
+            <div class="card card-body col-lg-8 m-2">
+              <h3 class="">Danh sách Loại hình</h3>
+              <div class="mb-3 w-100 d-flex justify-content-between">
+                <div class="d-flex" style="width: 85%">
+                  <input
+                    type="text"
+                    id="searchloaihinhdmin"
+                    class="form-control w-50"
+                    placeholder="Nhập từ khoá tìm kiếm?"
+                  />
+
+                  <button
+                    class="btn mybuttonok btnsearchadmin ml-2"
+                    onclick="timkiemloaihinh()"
+                  >
+                    Tìm kiếm
+                  </button>
+                </div>
+
+                <div class="col-lg-4">
+                  <button class="btn btn-secondary close-btn mybuttonnot">
+                    Thoát danh sách
+                  </button>
+                </div>
+              </div>
+              <div class="w-100 p-0 m-0">
+                <label class="text-right p-0 m-0" id="soloaihinhadmin"></label>
+              </div>
+              <table class="table-bordered rounded w-100">
+                <thead class="myheadertb rounded">
+                  <tr>
+                    <th class="p-2 text-center" style="width: 10%">Id</th>
+                    <th class="p-2 text-center" style="width: 50%">
+                      Tên loại hình
+                    </th>
+                    <th class="p-2 text-center" style="width: 30%"></th>
+                  </tr>
+                </thead>
+                <tbody class="danhsachloaihinh"></tbody>
+              </table>
+            </div>
+            <div class="col-lg-4 border border-1 rounded m-2">
+              <h3>Thêm loại hình</h3>
+              <div class="w-100">
+                <div class="form-group">
+                  <label for="tenloaihinh1">Tên loại hình:</label>
+                  <input type="text" class="form-control" id="tenloaihinh1" />
+                </div>
+              </div>
+
+              <div class="w-100 my-auto mx-3">
+                <div class="form-group d-flex">
+                  <button
+                    class="btn mybuttonok px-4 m-4 mx-auto"
+                    onclick="Themloaihinh()"
+                  >
+                    Thêm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sửa loại hình  -->
+        <div class="collapse m-2" id="loaihinh2">
+          <div class="card card-body">
+            <h3>Sửa loại hình</h3>
+
+            <div class="col-lg-8 d-flex">
+              <div class="w-50">
+                <div class="form-group">
+                  <label for="idloaihinh">Id:</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="idloaihinh"
+                    disabled
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tenloaihinh2">Tên loại hình:</label>
+                  <input type="text" class="form-control" id="tenloaihinh2" />
+                </div>
+              </div>
+
+              <div class="w-50 my-auto mx-3">
+                <div class="form-group">
+                  <button
+                    class="btn mybuttonok py-2 mt-4"
+                    onclick="Sualoaihinh()"
+                  >
+                    Lưu
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <button class="btn btn-secondary close-btn mybuttonnot">
+                Thoát danh sách
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Thoong tin wwebsite -->
+        <div class=" collapse m-2" id="danhgiadd">
+          <div class="d-flex w-100">
+            <div class="card card-body col-lg-12 m-2">
+              <h3 class="">Danh sách đánh giá</h3>
+              <div class="mb-3 w-100 d-flex justify-content-between">
+                <div class="d-flex" style="width: 85%">
+                  <input
+                    type="text"
+                    id="searchdanhgia"
+                    class="form-control w-50"
+                    placeholder="Nhập từ khoá tìm kiếm?"
+                  />
+                  <select name="" class="form-control mx-1 w-25" id="diemdanhgia">
+                      <option value="0">Tất cả</option>
+                      <option value="5">Điểm:5</option>
+                      <option value="4">Điểm:4</option>
+                      <option value="3">Điểm:3</option>
+                      <option value="2">Điểm:2</option>
+                      <option value="1">Điểm:1</option>
+                  </select>
+
+                  <button
+                    class="btn mybuttonok btnsearchadmin ml-2"
+                    onclick="Timkiemdanhgia()"
+                  >
+                    Tìm kiếm
+                  </button>
+                </div>
+
+                <div class="col-lg-4">
+                  <button class="btn btn-secondary close-btn mybuttonnot">
+                    Thoát danh sách
+                  </button>
+                </div>
+              </div>             
+              <div class="w-100 p-0 m-0">
+                <label class="text-right p-0 m-0" id="sodanhgiaadmin"></label>
+              </div>
+              <table class="table-bordered rounded w-100">
+                <thead class="myheadertb rounded">
+                  <tr>
+                    <th class="p-2 text-center" style="width: 5%">Id</th>
+                    <th class="p-2 text-center" style="width: 25%">Nội dung</th>
+                    <th class="p-2 text-center" style="width: 10%">
+                      Ngày thêm
+                    </th>
+                    <th class="p-2 text-center" style="width: 5%">Điểm</th>
+                    <th class="p-2 text-center" style="width: 20%">
+                      Id dịa điểm
+                    </th>
+                    <th class="p-2 text-center" style="width: 25%">
+                      Người đánh giá
+                    </th>
+                    <th class="p-2 text-center" style="width: 10%"></th>
+                  </tr>
+                </thead>
+                <tbody class="danhsachdanhgia"></tbody>
+              </table>
+              <div class="w-100 d-flex mt-3">
+                <div class="m-auto">
+                  <nav aria-label=" phantrang example ">
+                    <ul class="pagination" id="paginationdanhgiaadmin"></ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="collapse m-2" id="thongtinwebsite">
+          <div class="d-flex w-100">
+            <div class="card card-body col-lg-6 m-2">
+              <h4 class="">BannerThree website</h4>
+              <div class="mb-0 w-100 d-flex justify-content-between">
+                <div class="d-flex" style="width: 85%"></div>
+
+                <div class="col-lg-4">
+                  <button class="btn btn-secondary close-btn mybuttonnot">
+                    Thoát danh sách
+                  </button>
+                </div>
+              </div>
+              <div class="w-100 p-0 m-0">
+                <label class="text-right p-0 m-0" id="sotinhthanhadmin"></label>
+              </div>
+              <table class="table-bordered rounded w-100">
+                <thead class="myheadertb rounded">
+                  <tr>
+                    <th class="p-2 text-center">Image Banner</th>
+                  </tr>
+                </thead>
+                <tbody class="dsbannerthree"></tbody>
+              </table>
+            </div>
+            <div class="col-lg-6 border border-1 rounded m-2">
+              <h3>Cập nhật Banner</h3>
+              <div class="w-100">
+                <div class="d-flex col-lg-12 p-0">
+                  <div class="form-group col-4 p-0">
+                    <label for="banner1">Image 1</label>
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="banner1"
+                      onchange="showfileimage('banner1', 'banner11')"
+                    />
+                    <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                  </div>
+                  <div class="form-group col-8 p-0 ml-2 pr-2">
+                    <div class="" style="height: 200px">
+                      <img
+                        src="/img/"
+                        width="100%"
+                        id="banner11"
+                        class="d-none"
+                        height="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex col-lg-12 p-0">
+                  <div class="form-group col-4 p-0">
+                    <label for="banner2">Image 2</label>
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="banner2"
+                      onchange="showfileimage('banner2', 'banner22')"
+                    />
+                    <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                  </div>
+                  <div class="form-group col-8 p-0 ml-2 pr-2">
+                    <div class="" style="height: 200px">
+                      <img
+                        src="/img/"
+                        width="100%"
+                        class="d-none"
+                        id="banner22"
+                        height="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex col-lg-12 p-0">
+                  <div class="form-group col-4 p-0">
+                    <label for="banner3">Image 3</label>
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="banner3"
+                      onchange="showfileimage('banner3', 'banner33')"
+                    />
+                    <p class="text-danger d-none fs-6">Vui lòng chọn ảnh!</p>
+                  </div>
+                  <div class="form-group col-8 p-0 ml-2 pr-2">
+                    <div class="" style="height: 200px">
+                      <img
+                        src="/img/"
+                        width="100%"
+                        class="d-none"
+                        id="banner33"
+                        height="100%"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-100 my-auto mx-3">
+                <div class="form-group d-flex">
+                  <button
+                    class="btn mybuttonok px-4 m-4 mx-auto"
+                    onclick="Thembannerthree()"
+                  >
+                    Thêm
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- đổi mật khẩu  -->
+        <div class="collapse m-2" id="doimatkhau">
+          <div class="card card-body col-lg-12">
+            <h4>Đổi mật khẩu</h4>
+            <div>
+              <div class="d-flex col-lg-8">
+                <div class="form-group col-lg-4">
+                  <label for="oldpassadmin">Mật khẩu cũ:</label>
+                  <input type="text" class="form-control" id="oldpassadmin" />
+                  <p class="text-danger d-none fs-6">
+                    Vui lòng nhập trường này!
+                  </p>
+                </div>
+                <div class="form-group col-lg-4">
+                  <label for="newpassadmin">Mật khẩu mới:</label>
+                  <input type="text" class="form-control" id="newpassadmin" />
+                  <p class="text-danger d-none fs-6">
+                    Vui lòng nhập trường này!
+                  </p>
+                </div>
+                <div class="form-group col-lg-4">
+                  <label for="newpassadmin2">Nhập lại mật khẩu mới:</label>
+                  <input type="text" class="form-control" id="newpassadmin2" />
+                  <p class="text-danger d-none fs-6">Nhập lại không giống!</p>
+                </div>
+              </div>
+              <div class="w-75 d-flex">
+                <button class="btn mybuttonok m-auto" onclick="Changpassword()">
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+            <button
+              class="btn btn-secondary close-btn mybuttonnot"
+              style="width: 150px"
+            >
+              Thoát danh sách
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="alert-container"
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1050;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+      "
+    ></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./admin.js"></script>
+  </body>
+</html>

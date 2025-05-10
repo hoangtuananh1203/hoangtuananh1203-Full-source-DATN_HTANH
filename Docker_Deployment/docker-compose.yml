@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./Backend/My_websiteAPI/My_websiteAPI
+    container_name: aspnet-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - ElasticUrl=http://localhost:9200  
+      - LmApi=http://host.docker.internal:1234  # Địa chỉ API của LM Studio trên máy host
+      - ConnectionStrings__MyDB1=Server=host.docker.internal;Port=5432;Database=My_WebsiteV14;Username=postgres;Password=123456789
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - app-network
+
+  frontend:
+    build:  
+      context: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+    depends_on:
+      - backend  
+
+volumes:
+  pgdata:
+
+networks:
+  app-network:
+    driver: bridge

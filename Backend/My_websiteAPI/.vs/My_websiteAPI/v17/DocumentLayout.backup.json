@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\bannerthreecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\bannerthreecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\model\\bannerthree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\model\\bannerthree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\model\\chatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\model\\chatrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\diadiemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\diadiemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\model\\diadiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\model\\diadiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\my_websiteapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\my_websiteapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\data\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\danhgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\danhgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\editaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\editaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\donggopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\donggopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|d:\\tailieu old\\\u0111\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\fullsource\\backend\\my_websiteapi\\my_websiteapi\\controllers\\sukientintuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A735DA-2A3D-4BE9-B2E3-9BADE804097E}|My_websiteAPI\\My_websiteAPI.csproj|solutionrelative:my_websiteapi\\controllers\\sukientintuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BannerthreeController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\BannerthreeController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\BannerthreeController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\BannerthreeController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\BannerthreeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T18:16:11.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BannerThree.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Model\\BannerThree.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Model\\BannerThree.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Model\\BannerThree.cs",
+              "RelativeToolTip": "My_websiteAPI\\Model\\BannerThree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T11:31:24.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DiadiemController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\DiadiemController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\DiadiemController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\DiadiemController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\DiadiemController.cs",
+              "ViewState": "AgIAAPUCAAAAAAAAAAAnwA0DAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T07:33:43.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\ChatbotController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAgwJcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:59:11.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatRequest.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Model\\ChatRequest.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Model\\ChatRequest.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Model\\ChatRequest.cs",
+              "RelativeToolTip": "My_websiteAPI\\Model\\ChatRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T17:59:45.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Diadiem.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Model\\Diadiem.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Model\\Diadiem.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Model\\Diadiem.cs",
+              "RelativeToolTip": "My_websiteAPI\\Model\\Diadiem.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T16:32:38.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Program.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Program.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Program.cs",
+              "RelativeToolTip": "My_websiteAPI\\Program.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:02:30.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "My_websiteAPI\\appsettings.json",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\appsettings.json",
+              "RelativeToolTip": "My_websiteAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-14T15:07:32.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "My_websiteAPI.csproj",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\My_websiteAPI.csproj",
+              "RelativeDocumentMoniker": "My_websiteAPI\\My_websiteAPI.csproj",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\My_websiteAPI.csproj",
+              "RelativeToolTip": "My_websiteAPI\\My_websiteAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-29T08:16:28.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditAccountController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\EditAccountController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\EditAccountController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\EditAccountController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\EditAccountController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:11:56.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "My_websiteAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-29T08:16:31.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwEkAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T12:57:14.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DongGopController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\DongGopController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\DongGopController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\DongGopController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\DongGopController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T16:32:34.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DanhgiaController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\DanhgiaController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\DanhgiaController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\DanhgiaController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\DanhgiaController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:34:56.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyDBcontext.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Data\\MyDBcontext.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Data\\MyDBcontext.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Data\\MyDBcontext.cs",
+              "RelativeToolTip": "My_websiteAPI\\Data\\MyDBcontext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:47:33.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SukienTinTucController.cs",
+              "DocumentMoniker": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\SukienTinTucController.cs",
+              "RelativeDocumentMoniker": "My_websiteAPI\\Controllers\\SukienTinTucController.cs",
+              "ToolTip": "D:\\Tailieu old\\\u0110\u1ED3 \u00E1n t\u1ED1t nghi\u1EC7p\\Fullsource\\Backend\\My_websiteAPI\\My_websiteAPI\\Controllers\\SukienTinTucController.cs",
+              "RelativeToolTip": "My_websiteAPI\\Controllers\\SukienTinTucController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T10:30:24.911Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

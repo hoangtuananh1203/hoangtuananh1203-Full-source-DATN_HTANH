@@ -1,0 +1,166 @@
+.containermain{
+    width: 100%;
+    height: 100vh;
+}
+.menucontainer{
+    width: 5%;
+    height: 100% !important;
+}
+.contentmain{
+    width: 95%;
+    height:100% !important ;
+}
+body {
+    font-family: "Raleway", sans-serif;
+}
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.logoutadmin{
+   font-size: 25px !important;
+   margin-top: 5px;
+
+}
+.logoutadmin:hover{
+   background: #ffffff;
+   color: var(--text_color);
+ }
+.logoutadmin{
+    font-size: 25px !important;
+    
+ }
+.sidebar a {
+    padding: 10px 15px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.dropdown-menu.show {
+    top: -5px !important;
+    left: 70px !important;
+}
+.sidebar a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.sidebar a:hover {
+    background-color: #ddd;
+}
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+ span{
+    font-size: 22px !important;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+.card.card-body{
+    padding-bottom: 0 !important;
+}
+.tooltip .tooltip-inner {
+    max-width: 200px !important; 
+    text-align: center !important;
+    background-color: var(--btn_bg) !important; 
+    color: #FFFF !important; 
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+}
+.dropdown .dropdown-menu a:hover {
+    background: var(--backgroundhv) !important;
+    color: var(--text_color);
+}
+.dropdown {
+    background: var(--backgroundhv) !important;
+   padding: 2px !important; 
+   margin: 2px !important;
+}
+/* nội dung  */
+.inlinenowrapnoidung {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 1.5em;
+    max-height: 3em;        
+}
+.myheadertb, tbody{
+    font-size: 14px !important;
+}
+#timdonggop{
+    width: 550px;
+  
+}
+#trangthaidonggop{
+    width: 200px;
+}
+
+.btnsearchadmin{
+    width: 150px;
+}
+.tablediadiem{
+    max-width: 100%;
+    overflow: auto;
+    max-height: 65vh;
+   
+}
+tbody tr:hover{
+    background-color: rgb(246, 246, 246);
+}
+.mybuttontt{
+    margin: 5px 5px;
+    text-align: center;
+    font-size: 12px !important;
+}
+div:where(.swal2-container) div:where(.swal2-html-container) ,div:where(.swal2-container) h2:where(.swal2-title) {
+
+    padding: 10px 0px !important;
+}
+.phantrang{
+    margin-top: 10px !important;
+}
+  .page-link{
+    background: #c5d3e1;
+  }
+  .page-item{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .modal-header {
+  padding: 2px !important;
+  background-color: rgb(250, 205, 205);
+
+}
+.modal-content{
+    width: 400px !important;
+    margin: auto;
+}
+.alert.alert-primary.alert-dismissible.fade.show.position-fixed.bottom-0.end-0.m-3.mb-5 {
+    right: 0px !important;
+    bottom: -27px !important;
+}
+
+.dssktt{
+    max-width: 100%;
+    overflow: auto;
+    max-height: 70vh;
+}
+h2#swal2-title{
+    font-size: 20px !important;
+}

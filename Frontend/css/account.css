@@ -1,0 +1,88 @@
+@media (max-width: 500px) {
+   
+   
+    
+      .btndelete {
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      .btndelete button {
+        margin: 0 auto !important;
+        display: block !important;
+        width: 20%; /* full width nếu muốn nút lớn hơn */
+      }
+    .diadiemdl{
+       display: flex;
+       
+    }
+    .imagelistsktt{
+        min-width: 100px !important;
+        max-width: 110px !important;
+    }
+    .sothutu{
+        display: none !important;
+    }
+    .searchsktt{
+        margin-top: 15px !important;
+    }
+    .container.containersktt.mt-3{        margin-top: 10px !important;
+    }
+    .containertt img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .imagelistsktt img {
+        min-width: 100px !important;
+    }
+    #listtrainghiem div{
+        padding: 0px 10px;
+    }
+    #listtrainghiem button{
+        padding: 0px 19px !important;
+
+    }
+    .giave{
+        display: none;
+    }
+    p{
+        font-size: 13px;
+    }
+    h4{
+        font-size: 15px;
+    }
+    .containertt .col-md-9{
+        padding: 0 5px!important;
+
+    }
+    input#timkiemdiadiem{
+        padding: 5px 0 !important;
+        text-indent: 10px !important;
+    }
+}
+
+@media (max-width:1200px) {
+    input#timkiemdiadiem ,button.btn.backgrounddark.border-2.py-3.px-5.position-absolute.rounded-pill.text-white.h-100{
+        font-size: 15px;
+    }
+
+    h4.inlinenowrap2{
+        font-size: 18px !important;
+    }
+}
+
+
+
+@media (max-width:800px) {
+    input#timkiemdiadiem ,button.btn.backgrounddark.border-2.py-3.px-5.position-absolute.rounded-pill.text-white.h-100{
+        font-size: 14px !important;
+    }
+    img.p-0.m-0.rounded{
+        width: 150px;
+    }
+    h4.inlinenowrap2{
+        font-size: 17px !important;
+    }
+
+}

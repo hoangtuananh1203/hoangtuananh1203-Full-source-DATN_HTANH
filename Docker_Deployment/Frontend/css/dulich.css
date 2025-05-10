@@ -1,0 +1,152 @@
+.select2-search__field {
+    display: none !important;
+}
+#provinceSelect ,#TypeDD{
+    font-size: 14px;
+}
+.diadiemdl{
+
+    border: 1px solid rgb(167, 167, 167);
+    
+}
+.diadiemdl:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.diadiemdl .col-md-4  .p-0{
+    height: 100%;
+   width: 100%;
+        }
+.diadiemdl img{
+    height: 100%;
+    width: 100%;
+    
+        }
+        .page-item.active .page-link {
+            z-index: 3;
+            color:#FFFF;
+            background-color:var(--text_color) ;
+            border-color: var(--text_color);
+        }
+        .page-item .page-link {
+            border-color: var(--text_color);
+        }
+        .pagination a:hover:not(.active) {
+            color:#FFFF;
+            background-color:var(--text_color) ;
+            border-color: var(--text_color);
+        }
+
+.inlinenowrap {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 1.5em;
+    max-height: 3em;        
+}
+.inlinenowrap1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 1.5em;
+    max-height: 3em;        
+}
+.inlinenowrap2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    line-height: 1.5em;
+    max-height: 3em;        
+}
+@media (max-width:1200px) {
+    
+    .chonloaidd{
+        width: 20%;
+
+    }
+    .nhaptimkiem{
+width: 60%;
+    }
+    .xapxeptheo{
+display: none;
+    }
+    .chontinhthanh{
+width: 20%;
+    }
+
+    
+}
+@media (max-width:800px) {
+    
+    .reponsitorydlmenu{
+        display: flex;
+    }
+    .containerdiadiemdl,.containerdiadiemdl.justify-content-center{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .row.g-4.justify-content-center.ps-3.pe-2.mt-1{
+        padding: 0 !important;
+    }
+}
+@media (max-width:600px) {
+    
+    .reponsitorydlmenu{
+        display: flex;
+    }
+    .chonloaidd{
+        width: 50%;
+
+    }
+    .nhaptimkiem{
+width: 100%;
+margin: 0 0 10px 0 !important;
+    }
+    .xapxeptheo{
+display: none;
+    }
+    .chontinhthanh{
+width: 50%;
+    }
+ 
+    .reponsitorydlmenu .col-sm-6{
+        display: flex;
+        width: 50% !important;
+    padding: 0 !important;
+    }
+  
+    .reponsimobilecontent{
+        padding: 0 2px !important;
+    }
+    .reponsimobile{
+        width: 100%;
+    }
+    .reponsimobile .col-md-4.p-0.m-0 {
+       width: 50% !important;
+    }
+   
+    
+    .reponsimobile .col-md-8.px-3 {
+        width: 60% !important;
+    }
+    select#provinceSelect2{
+        font-size: 15px !important;
+    }
+  h4.inlinenowrap2{
+        font-size: 17px !important;
+    }
+    p.p-0.m-1.text-dark.inlinenowrap{
+        font-size: 15px !important;
+
+    }
+   
+}
